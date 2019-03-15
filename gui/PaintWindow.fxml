@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="artatawe.controller.PaintWindowController">
+    <children>
+        <VBox>
+           <children>
+               <MenuBar prefHeight="25.0" prefWidth="300.0">
+                  <menus>
+                      <Menu text="File">
+                         <items>
+                                 <MenuItem onAction="#saveAction" text="Save and Exit" />
+                         </items>
+                      </Menu>
+                      <Menu text="Tool">
+                         <items>
+                                 <MenuItem onAction="#toolTraceAction" text="Trace" />
+                                 <MenuItem onAction="#toolLineAction" text="Line" />
+                         </items>
+                      </Menu>
+                  </menus>
+               </MenuBar>
+               <ToolBar prefHeight="30.0" prefWidth="300.0">
+                  <items>
+                      <HBox alignment="CENTER" spacing="5">
+                         <children>
+                             <TextField fx:id="brushSize" text="18" />
+                             <ColorPicker fx:id="colorPicker" />
+                             <Label fx:id="failMsg" />
+                         </children>
+                      </HBox>
+                  </items>
+               </ToolBar>
+           </children>
+        </VBox>
+    <Canvas fx:id="canvas" height="340.0" layoutY="60.0" width="300.0" />
+    </children>
+</AnchorPane>

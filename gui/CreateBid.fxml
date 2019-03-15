@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="artatawe.controller.CreateBidController">
+    <AnchorPane prefHeight="500.0" prefWidth="158.0" style="-fx-background-color: #1D2026;">
+        <Label layoutX="39.0" layoutY="30.0" text="Artatawe" textFill="aliceblue">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font></Label>
+        <Button fx:id="homeBtn" layoutX="6.0" layoutY="167.0" mnemonicParsing="false" onAction="#homeAction" prefHeight="23.0" prefWidth="146.0" style="-fx-background-color: #1D2026;" text="Home" textFill="WHITE" />
+    </AnchorPane>
+   <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="325.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" />
+   <Button fx:id="uploadArtBtn" layoutX="543.0" layoutY="60.0" mnemonicParsing="false" text="Upload Artwork" onAction="#uploadAction" />
+   <ChoiceBox fx:id="artType" layoutX="352.0" layoutY="227.0" prefHeight="23.0" prefWidth="146.0" />
+   <TextField fx:id="title" layoutX="352.0" layoutY="259.0" prefHeight="23.0" prefWidth="224.0" />
+   <TextField fx:id="description" layoutX="352.0" layoutY="291.0" prefHeight="23.0" prefWidth="224.0" />
+   <TextField fx:id="artistName" layoutX="352.0" layoutY="323.0" prefHeight="23.0" prefWidth="224.0" />
+   <TextField fx:id="yearCreated" layoutX="352.0" layoutY="355.0" prefHeight="23.0" prefWidth="224.0" />
+   <TextField fx:id="reservePrice" layoutX="352.0" layoutY="387.0" prefHeight="23.0" prefWidth="146.0" />
+   <Label fx:id="titleLabel" layoutX="249.0" layoutY="262.0" text="Title :" />
+   <Label fx:id="descrLabel" layoutX="249.0" layoutY="294.0" text="Description :" />
+   <Label fx:id="artistNameLabel" layoutX="249.0" layoutY="327.0" text="Artist Name:" />
+   <Label fx:id="yearCreatedLable" layoutX="249.0" layoutY="359.0" text="Year Created :" />
+   <Label fx:id="priceLabel" layoutX="249.0" layoutY="391.0" text="Reserve Price :" />
+   <Button fx:id="submitBtn" layoutX="515.0" layoutY="387.0" mnemonicParsing="false" text="Submit" onAction="#submitAction" />
+</AnchorPane>

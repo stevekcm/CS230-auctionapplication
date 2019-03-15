@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane2" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="artatawe.controller.EditProfileController">
+    <children>
+        <AnchorPane prefHeight="500.0" prefWidth="158.0" style="-fx-background-color: #1D2026;">
+            <Label layoutX="39.0" layoutY="30.0" text="Artatawe" textFill="aliceblue">
+                <font>
+                    <Font name="System Bold" size="20.0" />
+                </font></Label>
+           <Button fx:id="homeBtn" layoutX="6.0" layoutY="167.0" mnemonicParsing="false" onAction="#homeAction" prefHeight="23.0" prefWidth="146.0" style="-fx-background-color: #1D2026;" text="Home" textFill="WHITE" />
+           <!-- Favourite Artwork Button: -->
+           <Button fx:id="favArtworkBtn" layoutX="20.0" layoutY="203.0" mnemonicParsing="false" onAction="#favArtworkAction" prefHeight="23.0" prefWidth="127.0" style="-fx-background-color: #1D2026;" text="Favourite Artwork" textFill="WHITE" />
+           <!-- Favourite User Button: -->
+           <Button fx:id="favUserBtn" layoutX="22.0" layoutY="239.0" mnemonicParsing="false" onAction="#favUserAction" prefHeight="23.0" prefWidth="115.0" style="-fx-background-color: #1D2026;" text="Favourite User" textFill="WHITE" />
+           <ImageView fx:id="smallAvatar" fitHeight="46.0" fitWidth="49.0" layoutX="55.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true" />
+        </AnchorPane>
+        <TextField fx:id="firstName" layoutX="407.0" layoutY="250.0">
+            <effect>
+                <Blend />
+            </effect></TextField>
+        <TextField fx:id="lastName" layoutX="407.0" layoutY="284.0" />
+        <TextField fx:id="phoneNumber" layoutX="407.0" layoutY="321.0" />
+        <TextField fx:id="address" layoutX="407.0" layoutY="356.0" />
+        <TextField fx:id="postcode" layoutX="407.0" layoutY="388.0" />
+        <Label fx:id="firstNameLabel" layoutX="291.0" layoutY="254.0" text="First Name :" />
+        <Label fx:id="lastNameLabel" layoutX="291.0" layoutY="288.0" text="Last Name :" />
+        <Label fx:id="phoneNumberLabel" layoutX="291.0" layoutY="322.0" text="Phone Number :" />
+        <Label fx:id="addressLabel" layoutX="291.0" layoutY="356.0" text="Address :" />
+        <Label fx:id="postcodeLabel" layoutX="291.0" layoutY="390.0" text="Postcode  :" />
+        <Label fx:id="notification" layoutX="325.0" layoutY="225.0" textFill="RED" />
+        <ImageView fx:id="mainAvatar" fitHeight="145.0" fitWidth="169.0" layoutX="323.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="uploadAvaBtn1" layoutX="513.0" layoutY="115.0" mnemonicParsing="false" onAction="#builtInAction" prefHeight="23.0" prefWidth="107.0" text="Built-In Avatar" />
+
+        <!-- Upload Avatar Button: -->
+        <Button fx:id="uploadAvaBtn" layoutX="513.0" layoutY="155.0" mnemonicParsing="false" onAction="#uploadAction" prefHeight="23.0" prefWidth="107.0" text="Upload Avatar" />
+        <!-- Paint Avatar Button: -->
+        <Button fx:id="paintAvaBtn" layoutX="513.0" layoutY="73.0" mnemonicParsing="false" onAction="#paintAction" prefHeight="23.0" prefWidth="107.0" text="Paint Avatar" />
+      <Button fx:id="paintAvaBtn1" layoutX="513.0" layoutY="195.0" mnemonicParsing="false" onAction="#removeAction" prefHeight="23.0" prefWidth="107.0" text=" Remove Avatar" textFill="RED" />
+        <!-- Submit Button: -->
+        <Button fx:id="submitBtn" layoutX="509.0" layoutY="425.0" mnemonicParsing="false" onAction="#summitAction" text="Submit" />
+        <Label layoutX="181.0" layoutY="26.0" text="Edit Profile" textFill="#979696">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

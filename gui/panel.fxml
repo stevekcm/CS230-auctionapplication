@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<AnchorPane fx:id="rootPane1" maxHeight="500" maxWidth="700" minHeight="500" minWidth="700" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/fxml/1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="artatawe.controller.PanelController">
+   <children>
+      <AnchorPane minWidth="158" prefHeight="500.0" prefWidth="158.0" style="-fx-background-color: #1D2026;">
+
+         <children>
+             <!-- Browser Button: -->
+            <Button fx:id="profileBtn" layoutX="9.0" layoutY="167.0" mnemonicParsing="false" onAction="#profileAction" prefHeight="23.0" prefWidth="147.0" style="-fx-background-color: #1D2026;" text="Profile" textFill="WHITE" />
+
+            <!-- Header/Title-->
+            <Label layoutX="39.0" layoutY="30.0" text="Artatawe" textFill="aliceblue" fx:id="title">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+
+             <!-- Edit Profile Button: -->
+            <Button layoutX="10.0" layoutY="203.0" mnemonicParsing="false" onAction="#editAction" prefHeight="23.0" prefWidth="139.0" style="-fx-background-color: #1D2026;" text="Edit Profile" textFill="WHITE" />
+            <!--Artwork Button: -->
+            <Button fx:id="artworkBtn" layoutX="19.0" layoutY="239.0" mnemonicParsing="false" onAction="#artworkAction" prefHeight="23.0" prefWidth="124.0" style="-fx-background-color: #1D2026;" text="Artwork" textFill="WHITE" />
+             <!-- Log Out Button: -->
+            <Button fx:id="logoutBtn" layoutX="19.0" layoutY="275.0" mnemonicParsing="false" onAction="#logoutAction" prefHeight="23.0" prefWidth="124.0" style="-fx-background-color: #1D2026;" text="Logout" textFill="WHITE" />
+            <ImageView fx:id="smallAvatar" fitHeight="39.0" fitWidth="40.0" layoutX="63.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <ChoiceBox fx:id="choiceBox" layoutX="559.0" layoutY="14.0" onAction="#showArt" prefHeight="23.0" prefWidth="124.0" style="-fx-background-color: #1D2026;" />
+   </children>
+   <children>
+     <ListView fx:id="listView" layoutX="185.0" layoutY="46.0" prefHeight="442.0" prefWidth="498.0"  />
+   </children>
+
+</AnchorPane>

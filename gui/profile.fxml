@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane3" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="artatawe.controller.ProfileController">
+   <children>
+       <AnchorPane prefHeight="500.0" prefWidth="158.0" style="-fx-background-color: #1D2026;">
+       <Label layoutX="39.0" layoutY="30.0" text="Artatawe" textFill="aliceblue">
+           <font>
+               <Font name="System Bold" size="20.0" />
+           </font></Label>
+          <Button fx:id="homeBtn" layoutX="6.0" layoutY="167.0" mnemonicParsing="false" onAction="#homeAction" prefHeight="23.0" prefWidth="146.0" style="-fx-background-color: #1D2026;" text="Home" textFill="WHITE" />
+       </AnchorPane>
+       <Label fx:id="firstName" layoutX="314.0" layoutY="272.0" text="" />
+       <Label fx:id="lastName" layoutX="314.0" layoutY="304.0" text="" />
+       <Label fx:id="phoneNumber" layoutX="314.0" layoutY="336.0" text="" />
+       <Label fx:id="address" layoutX="314.0" layoutY="368.0" text="" />
+       <Label fx:id="postcode" layoutX="314.0" layoutY="400.0" text="" />
+       <Button fx:id="logoutBtn" layoutX="10.0" layoutY="239.0" mnemonicParsing="false" onAction="#logoutAction" prefHeight="23.0" prefWidth="140.0" style="-fx-background-color: #1D2026;" text="Logout" textFill="WHITE" />
+       <Button fx:id="editProfileBtn" layoutX="16.0" layoutY="203.0" mnemonicParsing="false" onAction="#editProfileAction" prefHeight="23.0" prefWidth="132.0" style="-fx-background-color: #1D2026;" text="Edit Profile" textFill="WHITE" />
+      <ImageView fx:id="mainAvatar" fitHeight="188.0" fitWidth="216.0" layoutX="314.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true" />
+       <ImageView fx:id="smallAvatar" fitHeight="39.0" fitWidth="40.0" layoutX="63.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
